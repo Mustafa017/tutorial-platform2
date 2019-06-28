@@ -10,7 +10,7 @@ export function loadCourseSuccess(courses) {
   return { type: types.LOAD_COURSE_SUCCESS, courses };
 }
 
-export function loadCourse() {
+export function loadCourses() {
   return function(dispatch) {
     return courseApi
       .getCourses()
